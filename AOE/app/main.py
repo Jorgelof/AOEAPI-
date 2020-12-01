@@ -1,5 +1,5 @@
-from CreateDB import CREATE_DB
-from Api import API
+from dbcreation import CREATE_DB
+from aoiiapi import API
 from ORM import *
 
 def main():

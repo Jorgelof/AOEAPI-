@@ -1,19 +1,62 @@
-AGE OF EMPIRES
------------------------------------------------------------------------------
-Aplicacion que recolecta informacion desde la API https://age-of-empires-2-api.herokuapp.com
-y la almacena en una base de datos local usado libreria sqlite3 para creacion de bases de datos 
+﻿## DAS_SISTEMAS Proyecto Final
+
+
+	Equipo
+- AngelDavid Sena Martinez
+
+- Jorge Luis Lopez Flores
+
+## Descripcion
+Contenedores en docker que consumen y ofrecen servicios
+
+![Screenshot](Diagrama1.png)
+
+### Age of  Empires Base de Datos
+![Screenshot](Diagrama2.png)
+
+
+### Especificaciones
+
+Aplicacion que recolecta y muestra informacion desde la API 
+https://age-of-empires-2-api.herokuapp.com
+
+La información se almacena en una base de datos local usado libreria sqlite3 para creacion de bases de datos 
 y tablas.
 Se utiliza tecnica ORM usuando la libreria peewee para insertar y mostrar los datos.
 -----------------------------------------------------------------------------
-INSTRUCCIONES:
-Usar comando => docker run -it -p 5000:5000 fernandogm/age_of_empires_db:1.0 para inicializar contenedor remoto de dockerhub.
-Usar comando => python3 app.py para correr el programa Local con python
 
-La aplicacion genera informacion de CIVILIZACIONES, UNIDADES, ESTRUCTURAS y TECNOLOGIAS de manera
-aleatoria al recargar la pagina deacuerdo al parametro dado en la url.
-  Ejemplo:
-  0.0.0.0:5000 => Muestra un pequeño menu que redirecciona a las paginas de informacion.
-  0.0.0.0:5000/civiliations => Genera la informacion de una Civilizacion al azar. Al recargar Genera una civilizacion aleatoria y muestra su info.
-  0.0.0.0:5000/units => Genera la informacion de una Unidad al azar. Al recargar Genera una Unidad aleatoria y muestra su info.
-  0.0.0.0:5000/technologies => Genera la informacion de una Tecnologia al azar. Al recargar Genera una Tecnologia aleatoria y muestra su info.
-  0.0.0.0:5000/structures => Genera la informacion de una Estructura al azar. Al recargar Genera una Estructura aleatoria y muestra su info.
+### INSTRUCCIONES:
+
+*Verificar si estan instaladas o en el requirement se solicitan los modulos de python tal como python3 en orden
+para ejecutarlas:
+
+- flask v.1.1.2
+- requests v.2.22.0
+- peewee v.3.13.3
+
+Si ya haz instalado los paquetes puedes clonar el repositorio en tu equipo
+
+	$git clone https://github.com/jorgelof/AOE
+
+ ve a la ruta de ubicación de la app:
+ 
+ 	cd .../jorgelof/AOE
+ 	
+ Ya en la carpeta puedes verificar que este construida la base de datos "AgeOfEmpiresII.db",
+ si no está o deseas volverla a construir puedes eliminar la base de datos existente y correr el siguiente
+codigo:
+
+```$python3 dbcreation.py```
+
+o correr el archivo dbcreation.py en tu compilador.
+
+Despues de esto solo corre la app:
+
+	```$python3 app.py```
+	
+Abre tu navegador e introduce la ruta http://0.0.0.0:5000
+podrás ver la pagina de inicio de nuestra app.
+
+### Enlace del video
+
+[Proyecto API] (https://web.microsoftstream.com/video/939a7a1c-e460-407d-a810-5ed4090f4db9?list=studio)

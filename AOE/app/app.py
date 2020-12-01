@@ -19,7 +19,7 @@ def civilizaciones():
             "expansion":civs.expansion,
             "tipo": civs.tipo
         }
-    return render_template('civilizaciones.html', civilizacion = civilizacion)
+    return render_template('civilizations.html', civilizacion = civilizacion)
 
 @app.route('/units/')
 def Unidades():
@@ -48,7 +48,7 @@ def Estructuras():
         }
     return render_template('structures.html', estructura=estructura)
 
-@app.route('/technologies/')
+@app.route('/tech/')
 def Tecnologias():
     query = TECNOLOGIAS.select().where(TECNOLOGIAS.id == randrange(140))
     for tecs in query:
@@ -59,10 +59,9 @@ def Tecnologias():
             "expansion": tecs.expansion,
             "edad": tecs.edad
         }
-    return render_template('technologies.html', tecnologia = tecnologia)
+    return render_template('tech.html', tecnologia = tecnologia)
 db.close()
 if __name__ == '__main__':
     app.debug = True
     app.run(host="0.0.0.0")
     
-

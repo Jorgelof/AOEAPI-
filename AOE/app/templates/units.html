@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of Empires - Unidades</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
+</head>
+<style type="text/css">
+    body{
+      background-image: url("../static/font.jpg");
+        }
+</style>
+<body background="">
+    <div class="container">
+        <div class="row">
+          <div class="col s5">
+            <div class="card black">
+                <div class="card-image">
+                    <img src="../static/unidades.gif">
+                </div>
+                <div class="card-content white-text">
+                    <table class="centered">
+                        <tr>
+                            <td>ID</td>
+                            <td>{{unidad.get("id")}}</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>{{unidad.get("nombre")}}</td>
+                        </tr>
+                        <tr>
+                            <td>Descripcion</td>
+                            <td>{{unidad.get("descripcion")}}</td>
+                        </tr>
+                        <tr>
+                            <td>Expansion</td>
+                            <td>{{unidad.get("expansion")}}</td>
+                        </tr>
+                        <tr>
+                            <td>Edad</td>
+                            <td>{{unidad.get("edad")}}</td>
+                        </tr>
+                        <tr>
+                            <td>Rango</td>
+                            <td>{{unidad.get("rango")}}</td>
+                        </tr>
+                        <tr>
+                            <td>Ataque</td>
+                            <td>{{unidad.get("ataque")}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
+</body>
+</html>
