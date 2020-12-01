@@ -1,4 +1,4 @@
-AGE OF EMPIRES INFO
+AGE OF EMPIRES
 -----------------------------------------------------------------------------
 Aplicacion que recolecta informacion desde la API https://age-of-empires-2-api.herokuapp.com
 y la almacena en una base de datos local usado libreria sqlite3 para creacion de bases de datos 
