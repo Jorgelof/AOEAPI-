@@ -19,7 +19,7 @@ def civilizaciones():
             "expansion":civs.expansion,
             "tipo": civs.tipo
         }
-    return render_template('civilizations.html', civilizacion = civilizacion)
+    return render_template('civilizaciones.html', civilizacion = civilizacion)
 
 @app.route('/units/')
 def Unidades():

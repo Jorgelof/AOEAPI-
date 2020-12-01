@@ -1,7 +1,7 @@
 import sqlite3
 
 def CREATE_DB():
-    conexion = sqlite3.connect('AOE.db')
+    conexion = sqlite3.connect('AOE2.db')
     cursor = conexion.cursor()
 
     cursor.execute('''
